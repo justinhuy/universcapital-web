@@ -569,7 +569,7 @@ section {
     margin-top: 80px;
   }
 
-  .hero .hero-img img {
+  .hero .hero-img lottie-player {
     width: 80%;
   }
 }
@@ -587,7 +587,7 @@ section {
     font-size: 24px;
   }
 
-  .hero .hero-img img {
+  .hero .hero-img lottie-player {
     width: 100%;
   }
 }
@@ -775,6 +775,33 @@ section {
   height: 100%;
 }
 
+.features .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 64px;
+  transition: 0.5s;
+  color: var(--color-white);
+  background: var(--color-cta);
+}
+
+.features .btn-get-started span {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.features .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.features .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
 .features .feature-box h3 {
   font-size: 18px;
   color: var(--color-primary);
@@ -850,7 +877,7 @@ section {
 }
 
 .features .feature-icons {
-  margin-top: 120px;
+  margin-top: 24px;
 }
 
 .features .feature-icons h3 {

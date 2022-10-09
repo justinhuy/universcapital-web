@@ -293,7 +293,9 @@ section {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: var(--color-cta);
+  /* background: var(--color-cta); */
+  border: solid 2px;
+  border-color: var(--color-cta);
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 64px;
@@ -896,6 +898,17 @@ section {
 
 .features .feature-icons .content .icon-box {
   display: flex;
+  cursor: pointer;
+}
+
+.features .feature-icons .content .icon-box:hover {
+  background: rgba(6, 6, 6, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* Transition */
+  transition: 300ms;
 }
 
 .features .feature-icons .content .icon-box h4 {
@@ -1449,12 +1462,16 @@ section {
   padding: 30px;
   margin: 40px 30px;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
-  background: var(--color-white);
   min-height: 320px;
   display: flex;
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
+  background: rgba(6, 6, 6, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .testimonials .testimonial-item .stars {
@@ -1477,18 +1494,19 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #fff;
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: rgba(255, 255, 255, 0.777);
   margin: 0;
 }
 
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+  color: rgba(255, 255, 255, 0.746);
 }
 
 .testimonials .swiper-pagination {
@@ -1749,8 +1767,17 @@ section {
   margin-bottom: 0;
 }
 
+
+.contact .form-control {
+  background: #fff0;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-color: rgb(201, 201, 201);
+}
+
 .contact .php-email-form {
-  background: #fafbff;
   padding: 30px;
   height: 100%;
 }
@@ -1798,10 +1825,9 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 12px;
   box-shadow: none;
   font-size: 14px;
-  border-radius: 0;
 }
 
 .contact .php-email-form input:focus,
@@ -1819,11 +1845,12 @@ section {
 
 .contact .php-email-form button[type=submit] {
   background: var(--color-cta);
+  float: left;
   border: 0;
-  padding: 10px 30px;
+  padding: 8px 45px;
   color: var(--color-white);
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -2363,7 +2390,6 @@ section {
 --------------------------------------------------------------*/
 .footer {
   background: var(--color-background);
-  padding: 0 0 30px 0;
   font-size: 14px;
 }
 
@@ -2418,10 +2444,9 @@ section {
 }
 
 .footer .footer-top {
-  background: white url(../img/footer-bg.png) no-repeat right top;
-  background-size: contain;
-  border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
+  color: #fff;
+  text-align: center;
+  background-color: #2f2f2fa0;
   padding: 60px 0 30px 0;
 }
 

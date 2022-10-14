@@ -31,7 +31,15 @@
 
 <body>
 
+  <div class="circle-bg">
+    <div class="circle-bg1"></div>
+    <div class="circle-bg2"></div>
+    <div class="circle-bg3"></div>
+    <div class="circle-bg4"></div>  
+  </div>
+
   <!-- ======= Header ======= rm: class fixed-top -->
+
   <header id="header" class="header">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
@@ -48,6 +56,7 @@
 
     </div>
   </header><!-- End Header -->
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
@@ -68,7 +77,11 @@
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
           <!-- <img src="img/hero.json" class="img-fluid" alt=""> -->
-          <lottie-player class="img-fluid" src="img/hero.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+          <!-- <lottie-player class="img-fluid" src="img/hero.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player> -->
+          <div class="circle-animate-box">
+            <div class="animate-cirle circle1"></div>
+            <div class="animate-cirle circle2"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -78,9 +91,10 @@
   <!-- ======= Story Section ======= -->
   <section id="story">
 
-    <div class="container" data-aos="fade-up">
-
+    <div class="container story-box" data-aos="fade-up">
+      
       <header class="section-header">
+ 
         <!-- <h2>Features</h2> -->
         <h2>Our Story</h2>
         <h3 data-aos="fade-up" data-aos-delay="400">
@@ -97,17 +111,17 @@
   </section><!-- End Story Section -->
 
   <!-- ======= Clients Section ======= -->
-  <section id="clients" class="clients section-bg">
+  <section id="clients" class="clients">
 
-    <div class="container" data-aos="fade-up">
+    <div class="" data-aos="fade-up">
 
-      <header class="section-header">
+      <!-- <header class="section-header"> -->
         <!-- <h2>Our Clients</h2> -->
-        <h2>Partner With a Digital Marketing Agency <br/> That Delivers Growth</h2>
-      </header>
+        <!-- <h2>Partner With a Digital Marketing Agency <br/> That Delivers Growth</h2>
+      </header> -->
 
-      <div class="clients-slider swiper">
-        <div class="partner-slide swiper-wrapper align-items-cente p-5">
+      <!-- <div class="clients-slider swiper">
+        <div class="partner-slide swiper-wrapper align-items-center p-5">
           <div class="swiper-slide"><img src="img/binance.svg" class="img-fluid" alt=""></div>
           <div class="swiper-slide"><img src="img/binance.svg" class="img-fluid" alt=""></div>
           <div class="swiper-slide"><img src="img/binance.svg" class="img-fluid" alt=""></div>
@@ -118,7 +132,16 @@
           <div class="swiper-slide"><img src="img/binance.svg" class="img-fluid" alt=""></div>
         </div>
         <div class="swiper-pagination"></div>
+      </div> -->
+
+      <div class="partner-list container">
+        <img src="img/coinbase.png" alt="">
+        <img src="img/airbnb.png" alt="">
+        <img src="img/binance.png" alt="">
+        <img src="img/dropbox.png" alt="">
+
       </div>
+
     </div>
 
   </section><!-- End Clients Section -->
@@ -140,7 +163,7 @@
 
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
           <div class="box">
-            <lottie-player class="img-fluid" src="https://assets2.lottiefiles.com/packages/lf20_owantyq9.json" background="transparent"  speed="1" loop autoplay></lottie-player>
+            <img src="img/industry1.png" alt="">
             <!-- <h3>Ad cupiditate sed est odio</h3> -->
             <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
           </div>
@@ -148,7 +171,7 @@
 
         <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
           <div class="box">
-            <lottie-player class="img-fluid" src="https://assets2.lottiefiles.com/packages/lf20_QUXmIu.json" background="transparent"  speed="1" loop autoplay></lottie-player>
+            <img src="img/industry2.png" alt="">
             <!-- <h3>Voluptatem voluptatum alias</h3> -->
             <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
           </div>
@@ -156,8 +179,7 @@
 
         <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
           <div class="box">
-            <lottie-player class="img-fluid" src="https://assets2.lottiefiles.com/packages/lf20_saysspa8.json" background="transparent"  speed="1" loop autoplay></lottie-player>
-            <!-- <h3>Fugit cupiditate alias nobis.</h3> -->
+            <img src="img/industry3.png" alt="">            <!-- <h3>Fugit cupiditate alias nobis.</h3> -->
             <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
           </div>
         </div>
@@ -169,7 +191,7 @@
   </section><!-- End Industry Section -->
 
   <!-- ======= Features Section ======= -->
-  <section id="features" class="features section-bg">
+  <section id="features" class="features">
 
     <div class="container" data-aos="fade-up">
 
@@ -201,7 +223,7 @@
               <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="100">
                 <i class="ri-stack-line"></i>
                 <div>
-                  <h4>Paid Media</h4>
+                  <h4>Ads optimization</h4>
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                 </div>
               </div>
@@ -209,7 +231,7 @@
               <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="200">
                 <i class="ri-brush-4-line"></i>
                 <div>
-                  <h4>Website Development</h4>
+                  <h4>Community Viral</h4>
                   <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                 </div>
               </div>
@@ -217,7 +239,7 @@
               <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="300">
                 <i class="ri-magic-line"></i>
                 <div>
-                  <h4>Paid Social</h4>
+                  <h4>PR</h4>
                   <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
                 </div>
               </div>
@@ -225,16 +247,8 @@
               <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="400">
                 <i class="ri-command-line"></i>
                 <div>
-                  <h4>Website Development</h4>
+                  <h4>Programatic</h4>
                   <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
-                </div>
-              </div>
-
-              <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="500">
-                <i class="ri-radar-line"></i>
-                <div>
-                  <h4>Social Media</h4>
-                  <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
                 </div>
               </div>
 
@@ -252,7 +266,7 @@
   <!-- ======= Features Section ======= -->
   <section id="features" class="features">
 
-    <div class="container" data-aos="fade-up">
+    <div class="container story" data-aos="fade-up">
 
       <header class="section-header">
         <h2>Case Study</h2>
@@ -272,7 +286,7 @@
   </section><!-- End Features Section -->
 
   <!-- ======= Testimonials Section ======= -->
-  <section id="testimonials" class="testimonials section-bg">
+  <section id="testimonials" class="testimonials">
 
     <div class="container" data-aos="fade-up">
 

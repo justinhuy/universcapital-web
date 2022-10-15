@@ -31,7 +31,18 @@
 
 <body>
 
+  <div class="circle-bg">
+    <div class="circle-bg1"></div>
+    <div class="circle-bg2"></div>
+    <div class="circle-bg3"></div>
+    <div class="circle-bg4"></div>  
+    <div class="circle-bg5"></div>  
+    <div class="circle-bg6"></div>  
+
+  </div>
+
   <!-- ======= Header ======= rm: class fixed-top -->
+
   <header id="header" class="header">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
@@ -41,7 +52,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="getstarted scrollto" href="#about">Contact Us</a></li>
+          <li><a class="getstarted scrollto" href="#contact">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -49,17 +60,18 @@
     </div>
   </header><!-- End Header -->
 
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
 
-    <div class="container">
+    <div class="container hero-container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Your Full-Service Digital Marketing Company for Blockchain</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Welcome to your One Stop Digital Marketing Company for Blockchain.</h2>
+          <h1 data-aos="fade-up">Your Full-Service Digital Marketing Company for <span class="hero-change-text">Blockchain</span></h1>
+          <h2 style="margin-top: 30px;" data-aos="fade-up" data-aos-delay="400">Welcome to your One Stop Digital Marketing Company for Blockchain.</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <a style="margin-top: 20px;" href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Learn More</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -67,8 +79,10 @@
           </div>
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <!-- <img src="img/hero.json" class="img-fluid" alt=""> -->
-          <lottie-player class="img-fluid" src="img/hero.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+          <div>
+            <img style="margin-bottom:120px;" class="hero-img-abstract" src="img/hero-img-abstract.png" class="img-fluid" alt="">
+          </div>
+          <!-- <lottie-player class="img-fluid" src="img/hero.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player> -->
         </div>
       </div>
     </div>
@@ -78,11 +92,12 @@
   <!-- ======= Story Section ======= -->
   <section id="story">
 
-    <div class="container" data-aos="fade-up">
-
+    <div class="container story-box" data-aos="fade-up">
+      
       <header class="section-header">
+ 
         <!-- <h2>Features</h2> -->
-        <h2>Our Story</h2>
+        <h2 class="sub-header">Our Story</h2>
         <h3 data-aos="fade-up" data-aos-delay="400">
           A leading digital marketing agency dedicated to elevating your brand through multi-channel marketing solutions, branding and creative design.
           <br/>
@@ -97,17 +112,17 @@
   </section><!-- End Story Section -->
 
   <!-- ======= Clients Section ======= -->
-  <section id="clients" class="clients section-bg">
+  <section id="clients" class="clients">
 
-    <div class="container" data-aos="fade-up">
+    <div class="" data-aos="fade-up">
 
-      <header class="section-header">
+      <!-- <header class="section-header"> -->
         <!-- <h2>Our Clients</h2> -->
-        <h2>Partner With a Digital Marketing Agency <br/> That Delivers Growth</h2>
-      </header>
+        <!-- <h2>Partner With a Digital Marketing Agency <br/> That Delivers Growth</h2>
+      </header> -->
 
-      <div class="clients-slider swiper">
-        <div class="swiper-wrapper align-items-center">
+      <!-- <div class="clients-slider swiper">
+        <div class="partner-slide swiper-wrapper align-items-center p-5">
           <div class="swiper-slide"><img src="img/binance.svg" class="img-fluid" alt=""></div>
           <div class="swiper-slide"><img src="img/binance.svg" class="img-fluid" alt=""></div>
           <div class="swiper-slide"><img src="img/binance.svg" class="img-fluid" alt=""></div>
@@ -118,7 +133,16 @@
           <div class="swiper-slide"><img src="img/binance.svg" class="img-fluid" alt=""></div>
         </div>
         <div class="swiper-pagination"></div>
+      </div> -->
+
+      <div class="partner-list container">
+        <img src="img/coinbase.png" alt="">
+        <img src="img/airbnb.png" alt="">
+        <img src="img/binance.png" alt="">
+        <img src="img/dropbox.png" alt="">
+
       </div>
+
     </div>
 
   </section><!-- End Clients Section -->
@@ -130,7 +154,7 @@
 
       <header class="section-header">
         <!-- <h2>Our industry</h2> -->
-        <h2>Industries</h2>
+        <h2 class=" sub-header">Industries</h2>
         <h3 data-aos="fade-up" data-aos-delay="400">
           We’re a full-service digital marketing agency that helps brands that want to get noticed and dominate their industry.
         </h3>
@@ -140,7 +164,8 @@
 
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
           <div class="box">
-            <img src="img/values-1.png" class="img-fluid" alt="">
+            <img src="img/industry2.png" alt="">
+            <h2 style="font-weight: bold; color: white;">Blockchain</h2>
             <!-- <h3>Ad cupiditate sed est odio</h3> -->
             <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
           </div>
@@ -148,7 +173,8 @@
 
         <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
           <div class="box">
-            <img src="img/values-2.png" class="img-fluid" alt="">
+            <img src="img/industry1.png" alt="">
+            <h2 style="font-weight: bold; color: white;">Creative</h2>
             <!-- <h3>Voluptatem voluptatum alias</h3> -->
             <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
           </div>
@@ -156,8 +182,9 @@
 
         <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
           <div class="box">
-            <img src="img/values-3.png" class="img-fluid" alt="">
-            <!-- <h3>Fugit cupiditate alias nobis.</h3> -->
+            <img style="width:290px; height: 300px;" src="img/industry3.png" alt="">     
+            <h2 style="font-weight: bold; color: white;">Funding</h2>
+                   <!-- <h3>Fugit cupiditate alias nobis.</h3> -->
             <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
           </div>
         </div>
@@ -167,14 +194,15 @@
     </div>
 
   </section><!-- End Industry Section -->
+  <svg style="margin-top: -300px ;" data-theme="dark" viewBox="0 0 1371 131" xmlns="http://www.w3.org/2000/svg" class="css-54dvsu"><g opacity="0.12"><path fill-rule="evenodd" clip-rule="evenodd" d="M1283.29 61.2456L1370.47 107.883L1369.53 109.646L1279.05 61.2456H1087.11L1171.44 125.875L1170.22 127.462L1083.82 61.2456H922.641L975.373 128.246H1368.48V131.246H2.4845V128.246H192.484L279.477 61.2456H75.3353L1.45309 99.0025L0.542969 97.2216L70.9403 61.2456H2.4845V59.2456H74.8539L186.391 2.24561H2.4845V0.245605H1007.18L1007.3 0.0880319L1007.51 0.245605H1168.67L1168.8 0L1169.26 0.245605H1368.48V2.24561H1173L1279.55 59.2456H1368.48V61.2456H1283.29ZM1275.31 59.2456L1168.76 2.24561H1010.12L1084.5 59.2456H1275.31ZM1081.21 59.2456L1006.83 2.24561H876.205L921.067 59.2456H1081.21ZM918.522 59.2456L873.796 2.41838L874.015 2.24561H777.385L797.8 59.2456H918.522ZM795.676 59.2456L775.26 2.24561H603.759L603.9 2.31296L576.697 59.2456H795.676ZM796.392 61.2456L820.389 128.246H543.728L575.742 61.2456H796.392ZM822.513 128.246L798.517 61.2456H920.096L972.828 128.246H822.513ZM187.953 3.69316L187.213 2.24561H356.083L282.073 59.2456H79.2488L187.953 3.69316ZM357.608 3.59496L356.569 2.24561H485.937L440.961 59.2456H285.351L357.608 3.59496ZM488.283 2.50128L487.959 2.24561H601.716L574.481 59.2456H443.508L488.283 2.50128ZM441.93 61.2456H573.525L541.596 128.069L541.964 128.246H389.063L441.93 61.2456ZM439.382 61.2456L386.515 128.246H195.761L282.754 61.2456H439.382Z" fill="url(#paint0_linear_3597_5639)" style="mix-blend-mode:multiply"></path></g><rect x="220.999" y="59.7456" width="931" height="1" fill="url(#paint1_linear_3597_5639)" fill-opacity="0.6"></rect><defs><linearGradient id="paint0_linear_3597_5639" x1="1391" y1="65.7452" x2="52.5002" y2="65.7453" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0"></stop><stop offset="0.403742" stop-color="white" stop-opacity="0.505556"></stop><stop offset="0.479167" stop-color="white" stop-opacity="0.6"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient><linearGradient id="paint1_linear_3597_5639" x1="184.406" y1="62.9607" x2="184.556" y2="72.6672" gradientUnits="userSpaceOnUse"><stop stop-color="#191A1B"></stop><stop offset="0.3125" stop-color="#18434E"></stop><stop offset="0.697917" stop-color="#6C2F73"></stop><stop offset="1" stop-color="#191A1B"></stop></linearGradient></defs></svg>
 
   <!-- ======= Features Section ======= -->
-  <section id="features" class="features section-bg">
+  <section id="features" class="features">
 
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
-        <h2>Our services</h2>
+        <h2 class="sub-header">Our services</h2>
         <h3>We’re experts in all things marketing. Business-to-business, cryptocurrency, NFT, and high-growth startup brands are our sweet spot. Discover how we can scale your business to new heights through our strategic services below:</h3>
       </header>
 
@@ -184,7 +212,7 @@
         <div class="row">
 
           <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="img/features-3.png" class="img-fluid p-4" alt="">
+            <img src="img/service.png" class="img-fluid p-4" alt="">
           </div>
 
           <div class="col-xl-8 d-flex content">
@@ -201,7 +229,7 @@
               <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="100">
                 <i class="ri-stack-line"></i>
                 <div>
-                  <h4>Paid Media</h4>
+                  <h4>Ads optimization</h4>
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                 </div>
               </div>
@@ -209,7 +237,7 @@
               <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="200">
                 <i class="ri-brush-4-line"></i>
                 <div>
-                  <h4>Website Development</h4>
+                  <h4>Community Viral</h4>
                   <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                 </div>
               </div>
@@ -217,7 +245,7 @@
               <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="300">
                 <i class="ri-magic-line"></i>
                 <div>
-                  <h4>Paid Social</h4>
+                  <h4>PR</h4>
                   <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
                 </div>
               </div>
@@ -225,16 +253,8 @@
               <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="400">
                 <i class="ri-command-line"></i>
                 <div>
-                  <h4>Website Development</h4>
+                  <h4>Programatic</h4>
                   <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
-                </div>
-              </div>
-
-              <div class="col-md-6 icon-box p-3" data-aos="fade-up" data-aos-delay="500">
-                <i class="ri-radar-line"></i>
-                <div>
-                  <h4>Social Media</h4>
-                  <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
                 </div>
               </div>
 
@@ -252,10 +272,10 @@
   <!-- ======= Features Section ======= -->
   <section id="features" class="features">
 
-    <div class="container" data-aos="fade-up">
+    <div class="container story story-box" data-aos="fade-up">
 
       <header class="section-header">
-        <h2>Case Study</h2>
+        <h2 class="sub-header">Case Study</h2>
         <h3 data-aos="fade-up" data-aos-delay="400" class="mt-3">
           Partner With a Digital Marketing Agency That Delivers Growth
         </h3>
@@ -272,12 +292,12 @@
   </section><!-- End Features Section -->
 
   <!-- ======= Testimonials Section ======= -->
-  <section id="testimonials" class="testimonials section-bg">
+  <section id="testimonials" class="testimonials">
 
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
-        <h2>Testimonials</h2>
+        <h2  class="sub-header">Testimonials</h2>
         <h3>We’re a full-service digital marketing agency that helps brands that want to get noticed and dominate their industry.</h3>
       </header>
 
@@ -678,15 +698,15 @@
 
       <div class="container" data-aos="fade-up">
 
-        <header class="section-header">
-          <h2>Contact Us</h2>
+        <header class="section-header" style="padding-bottom: 0 !important;">
+          <h2 class="sub-header">Contact Us</h2>
         </header>
 
         <div class="row gy-4">
 
           <div class="col-lg-6">
-            <h3 style="color: #fff;">We’re a full-service digital marketing agency that helps brands that want to get noticed and dominate their industry.</h1>
-            <p style="color:rgba(255, 255, 255, 0.677)">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <h3 class="mt-5" style="color: var(--color-white-60);">We’re a full-service digital marketing agency that helps brands that want to get noticed and dominate their industry.</h1>
+            <p class="mt-3" style="color:rgba(255, 255, 255, 0.677)">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
           </div>
 
           <!-- <div class="col-lg-6">
@@ -787,9 +807,9 @@
     <div class="footer-top">
       <div class="container">
         <div class="gy-4">
-          <a href="#"><img src="img/facebook-logo-2019.png" alt="facebook"></a>
+          <a style="margin-right:20px ;" href="#"><img src="img/facebook-logo-2019.png" alt="facebook"></a>
           <a href="#"><img src="img/twitter (1).png" alt="twitter"></a>
-          <p>HEADQUARTER: 20A Tanjong Pagar Road Singapore</p>
+          <p style="margin-top: 20px">HEADQUARTER: 20A Tanjong Pagar Road Singapore</p>
           <p>VIETNAM OFFICE: 602/32-34 Dien Bien Phu Street, Ward 22, Binh Thanh District, HCMC</p>
           <div class="copyright">
             &copy; Copyright <strong><span>Univers Capital</span></strong>. All Rights Reserved

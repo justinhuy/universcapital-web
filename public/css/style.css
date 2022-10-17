@@ -571,12 +571,6 @@ section {
   text-align: right;
 }
 
-@media (min-width: 1024px) {
-  .hero {
-    background-attachment: fixed;
-  }
-}
-
 @media (max-width: 991px) {
   .hero {
     height: auto;
@@ -585,11 +579,6 @@ section {
 
   .hero .hero-img {
     text-align: center;
-    margin-top: 80px;
-  }
-
-  .hero .hero-img lottie-player {
-    width: 80%;
   }
 }
 
@@ -790,6 +779,10 @@ section {
   width: 75%;
   transition: 0.5s;
   transform: scale(1.1);
+}
+
+.industry .box img:last-child {
+  height: 800px;
 }
 
 .industry .box h3 {

@@ -1862,14 +1862,12 @@ section {
   margin-bottom: 100px;
 }
 
-.contact::before {
-  background: url(img/hero-bg.svg) top center no-repeat;
-  background-size: cover;
-  content: "";
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+@media screen and (max-width: 768px) {
+  .contact .contact-left {
+    margin-left: 30px;
+    padding-right: 60px;
+  }
 }
 
 .contact .info-box {
@@ -1969,14 +1967,17 @@ section {
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--color-cta);
+  color: var(--color-white)
 }
 
 .contact .php-email-form input {
   padding: 10px 15px;
+  color: var(--color-white)
 }
 
 .contact .php-email-form textarea {
   padding: 12px 15px;
+  color: var(--color-white)
 }
 
 .contact .php-email-form button[type="submit"] {

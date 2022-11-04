@@ -2965,14 +2965,14 @@ section {
 
 .line-decor {
   position: absolute;
-  top: 120vh;
+  top: 190vh;
   left: 300px;
   z-index: -2;
 }
 
 .line-decor2 {
   position: absolute;
-  top: 250vh;
+  top:310vh;
   right: 270px;
   z-index: -2;
 }

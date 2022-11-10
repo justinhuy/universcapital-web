@@ -17,5 +17,17 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  }
+  },
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhvoio/univers-capital.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhvoio/univers-capital/issues"
+  },
+  "homepage": "https://github.com/minhvoio/univers-capital#readme"
 }

@@ -84,7 +84,10 @@ section {
 }
 
 .section-header h2 {
-  color: var(--color-white);
+  background: linear-gradient(90deg, #ffffff -9.98%, #99ebd6 191.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin: 10px 0 0 0;
   padding: 0;
   font-size: 38px;
@@ -823,6 +826,7 @@ section {
 
   .industry .section-header h3 {
     margin: var(--margin-mobile);
+    margin-top: 16px;
   }
 }
 

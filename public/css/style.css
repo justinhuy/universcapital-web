@@ -3022,11 +3022,11 @@ section {
     font-size: 9vw !important;
   }
 
-  /* .section-header h3 {
-    margin-left: 20%;
-    margin-right: 20%;
-  } */
   .contact-left .mt-5 {
     padding-top: 10px !important;
+  }
+
+  #story-video {
+    width: 150%;
   }
 }

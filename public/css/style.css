@@ -2005,7 +2005,6 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
-  
 }
 
 .contact .form-control {
@@ -2020,7 +2019,6 @@ section {
 .contact .php-email-form {
   /* padding: 30px; */
   height: 100%;
-  
 }
 
 .contact .php-email-form .error-message {
@@ -2041,7 +2039,6 @@ section {
   padding: 15px;
   margin-bottom: 24px;
   font-weight: 600;
-  
 }
 
 .contact .php-email-form .loading {
@@ -2071,7 +2068,13 @@ section {
 .contact .php-email-form textarea {
   border-radius: 12px;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 14px;  
+}
+
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color:#fff;
+  opacity: 50%;
 }
 
 .contact .php-email-form input:focus,

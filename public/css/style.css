@@ -3063,7 +3063,7 @@ section {
 @media screen and (max-width: 820px) {
   .hero {
     height: auto;
-    padding: 13vh 0 60px 0;
+    padding: 20vh 0 60px 0;
     text-align: center;
   }
 
@@ -3077,9 +3077,8 @@ section {
   }
 
   .hero-video {
-    width: 25vw;
     height: 25vh;
-    padding-top: 6vh;
+    padding-top: 12vh;
     padding-left: 0;
     opacity: 30%;
   }

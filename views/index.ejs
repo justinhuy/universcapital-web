@@ -27,6 +27,9 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -43,43 +46,38 @@
     <img class="line-decor" src="img/Line-Decor.svg" alt="">
     <img class="line-decor2" src="img/Line-Decor.svg" alt="">
 
-
+    <header id="header" class="header container">
+      <img class="logo" src="img/UVC-Logo-and-Text.svg" alt="Univers Capital logo">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="">Our Story</a>
+          </li>
+          <li>
+            <a href="">Industries</a>
+          </li>
+          <li>
+            <a href="">Our Services</a>
+          </li>
+          <li>
+            <a href="">Case Study</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
       <!-- ======= Header ======= rm: class fixed-top -->
-  <header id="header" class="header">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="#" class="logo d-flex align-items-center">
-        <img src="img/UVC-Logo-and-Text.svg" alt="">
-      </a>
-      <ul class="nav-link">
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">Industries</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Case Study</a></li>
-      </ul>
-      <nav id="navbar" class="navbar">
-        <a class="getstarted scrollto" href="#contact">Contact Us</a>
 
-      </nav><!-- .navbar -->
-
-      <!-- <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav> -->
-
-    </div>
-  </header><!-- End Header -->
 
   <video autoplay muted loop id="myVideo" class="hero-video">
     <source src="img/hero-crystal.mp4" type="video/mp4">
@@ -88,7 +86,7 @@
       <div class="container hero-container">
         <div class="row">
           <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Your Full-Service Digital Marketing Company for <span class="hero-change-text">Blockchain</span></h1>
+            <h1 data-aos="fade-up">Your Full-Service Digital Marketing Company for <span id="words">Blockchain</span></h1>
             <h2 data-aos="fade-up" data-aos-delay="400">A leading digital marketing company dedicated to elevating your brand through multi-channel marketing, branding and creative design.</h2>
             <div data-aos="fade-up" data-aos-delay="600">
               <div class="text-center text-lg-start">
@@ -107,22 +105,25 @@
 
   <!-- ======= Story Section ======= -->
   <section id="story">
-    <div class="container">
-      <div data-aos="fade-up">
+    <div class="container box-story">
+      <div class="story story-box" data-aos="fade-up">
         <header class="section-header">
-          <h2 class="sub-header">Our Story</h2>
-          <h3 data-aos="fade-up" >
-            A leading digital marketing agency dedicated to elevating your brand through multi-channel marketing solutions, branding and creative design.
-            <br/>
-            <br/>
-            Enhancing your brand through multi-channel marketing solutions, branding and creative design.
-          </h3>
-        </header>
-      </div>
+            <h2 class="sub-header">Our Story</h2>
+          <div class="text-center justify-content-center" data-aos="fade-up" data-aos-delay="600">
+            <h3 data-aos="fade-up" >
+              A leading digital marketing agency dedicated to elevating your brand through multi-channel marketing solutions, branding and creative design.
+              <br/>
+              <br/>
+              Enhancing your brand through multi-channel marketing solutions, branding and creative design.
+            </h3>
+          </div>
     </div>
-   
+    
+        <div class="story-box-2"></div>
 
-  </section><!-- End Story Section -->
+  </section><!-- End Features Section -->
+
+
 
   <div class="d-flex justify-content-center">
     <video autoplay muted loop id="story-video" class="story-video">
@@ -184,7 +185,7 @@
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
           <div class="box">
             <img src="img/Asset 3.png" alt="">     
-            <h2 style="font-weight: bold; color: white;">Funding</h2>
+            <h2 style="font-weight: bold; color: white;">Traditional</h2>
                    <!-- <h3>Fugit cupiditate alias nobis.</h3> -->
             <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
           </div>
@@ -286,9 +287,6 @@
     </div>
     
         <div class="story-box-2"></div>
-      </header>
-
-    </div>
 
   </section><!-- End Features Section -->
 
@@ -483,6 +481,32 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
+
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+      navBar = document.querySelector('.nav-bar');
+      navBar.classList.toggle('active');
+    }
+  </script>
+
+  <script>
+    (function () {
+      var words = [
+        "Crypto",
+        "Traditional",
+        "Creative"
+      ],
+      i = 0;
+      setInterval(function(){
+        $('#words').fadeOut(function(){
+          $(this).html(words[(i = ( i + 1) % words.length)]).fadeIn();
+        });
+      }, 3000)
+    })();
+  </script>
+
+
 
 </body>
 
